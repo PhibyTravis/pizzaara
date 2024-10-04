@@ -1,0 +1,43 @@
+
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+.need{
+ color:$primary-color;
+ margin-bottom: 30px;
+ padding-left: 40%;
+ font-family: "kanit",sans-serif;
+ font-size: 20px;
+}
+.support{
+    padding-left: 30%;
+    font-family: "kanit",sans-serif;
+    font-weight: 1000
+}
+.about-support{
+    @include flex (center,center) ;
+    gap:20%
+}
+
+
+.live{
+    background-color: $grayish;
+    font-family: "kanit",sans-serif;
+    padding: 30px;margin-top: 30px;
+}
+// .email{
+//     background-color: $grayish;
+//     font-family: "kanit",sans-serif
+// }
+#reach{
+    color:$grey;
+}
+
+#c{
+    margin-left: 40%;
+}
+.fa-arrow-right{
+    color: $black;
+}
+.server{
+    font-size: 16px;
+}

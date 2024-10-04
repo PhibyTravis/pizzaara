@@ -1,0 +1,70 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins"as *;
+
+
+.main-imejes{
+    @include flex(center, center, row);
+    gap: 200px;
+    h6{
+        color: grey;
+    }
+    .btn{
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 7px;
+        border-radius: 2px;
+    }
+}
+.mejes{
+    @include flex(justify-content, center);
+    background-color: black;
+}
+span{
+    color: orange;
+    
+}
+
+ul{
+    @include flex(space-between, center);
+      margin: 10px 5px;
+    
+}
+
+.class{
+    @include flex(center, center, column);
+    h1{
+        margin-bottom: 50px;
+    }
+  }
+.btn-view{
+    @include flex(justify-content, center,);
+    background-color: orange;
+    border-radius: 7px;
+    color: white;
+    padding: 15px;
+    border: none;
+    margin: 10px 20px;
+}
+.bbq{
+    margin-bottom:100px 40px;
+    
+    h5{
+        padding: 10px;
+
+    }
+}
+
+
+
+#span{
+    color:black;
+}
+.middle-left{
+    padding-left: 400px;
+}
+
+
+
+
+

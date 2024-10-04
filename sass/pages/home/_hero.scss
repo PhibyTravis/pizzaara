@@ -1,0 +1,163 @@
+ @use "../../utilities/variables" as *;
+ @use "../../utilities/mixins" as *;
+
+
+section{
+    .hero{
+        @include flex(space-between, center);
+        margin-top: 1em;
+    }
+    .search{
+      width:max-content;
+      display: flex;
+      align-items: center;
+      padding: 16px;
+    }
+    .search-input{
+       font-size: 16px;
+       margin-left: 14px;
+       outline: none;
+       border: none;
+    }
+    .hero-right{
+        margin-top:3em;
+    }
+    .p1{
+        margin-top: 0.5em
+    }
+    .new-menu{
+        @include flex(center,center,column);
+        margin-top: 7em;
+    }
+    .box{
+        margin-top: 4em;
+        background-color: white;
+        @include flex(center,center,column);
+        padding: 2em;
+    }
+    .img{
+        @include flex(center,center);
+        background-color: black;
+        border-radius: 50%;
+        padding: 17px;
+    }
+    h1{
+        font-size: 3.5rem;
+        margin-top:10px
+    }
+   .ratings{
+    @include flex(space-between, center);
+   }
+   .main-pizza{
+    @include flex(center,center,column);
+   }
+   .Special-menu{
+    @include flex(space-between, center);
+    margin-top: 2em;
+    border-bottom: solid gray;
+    li {
+        a {
+          padding: 10px;
+          display: inline-block;
+          &:hover {
+            background-color: $primary-color;
+            color: white;
+          }
+        }
+      }
+   }
+}
+    
+    .search{
+      width:max-content;
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      border-radius:none;
+      background: #F6F6F6;
+    }
+    .search-input{
+       font-size: 16px;
+       margin-left: 14px;
+       outline: none;
+       border: none;
+       background:transparent;
+       color:#333333
+    }
+    form{
+@include flex(center,center);
+margin-right:10em;
+    }
+    .button{
+        padding: 14px;
+        color:white;
+        background-color: black;
+        border: none;
+border-radius: 7px;    }
+    .hero-right{
+        margin-top:3em;
+    }
+    .p1{
+        margin-top: 0.5em
+    }
+    .new-menu{
+        @include flex(center,center,column);
+        margin-top: 7em;
+    }
+    .box{
+        margin-top: 2em;
+        background-color: #F4F7FB;
+        @include flex(center,center,column);
+        padding: 2em;
+    }
+    .img{
+        @include flex(center,center);
+        background-color: black;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    h4{
+        margin-top: 1em;
+    }
+   
+    h1{
+        font-size: 3.5rem;
+        margin-top:10px
+    }
+   .ratings{
+    @include flex(space-between, center);
+   }
+   .main-pizza{
+    @include flex(center,center,column);
+   }
+   .Special-menu{
+    @include flex(space-between, center);
+    margin-top: 2em;
+    border-bottom: solid gray;
+    li {
+        a {
+          padding: 10px;
+          display: inline-block;
+          &:hover {
+            background-color: $primary-color;
+            color: white;
+          }
+        }
+      }
+   }
+
+
+
+   @media screen and(max-width:600){
+    h1{
+        width: 100%;
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+   }

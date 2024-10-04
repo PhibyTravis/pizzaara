@@ -1,0 +1,42 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+
+.why{
+    @include flex(flex-start, flex-start);
+    height: 80vh;
+    .why-left{
+        height: 100%;
+    }
+}
+.why-right{
+    height: 100%;
+    width: 60%;
+    @include flex(space-between, flex-start, column);
+
+    h2{
+        margin: .5em 0;
+    }
+    .why-header{
+        padding: 0 1.5em;
+    }
+}
+.more{
+    background-color:$grayish ;
+    @include flex(flex-start, flex-start, column);
+    padding: 2em 1.5em;
+    gap: 2em;
+    .more-group{
+        background-color: white;
+        border-radius: 5px;
+        padding: 1em;
+        @include flex(flex-start, flex-start);
+        gap: 1em;
+        .more-img{
+            background-color: $black;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            @include flex(center, center)
+        }
+    }
+}
